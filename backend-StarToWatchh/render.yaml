@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: json-server-api
+    env: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    rootDir: ./
+    envVars:
+      - key: NODE_VERSION
+        value: 22
